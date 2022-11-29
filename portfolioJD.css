@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    --black-color: #151515;
+    --green-color: #4EE1A0;
+    --darkgray-color: #242424;
+    --lightgray-color: #d9d9d9;
+    --white-color: #FFFFFF;
+}
+
+/*typo*/
+
+.xlBold {
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+}
+
+.lBold {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+}
+
+.mBold {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--lightgray-color);
+    margin: 1em 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+#logoHeader {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+a i {
+    color: var(--white-color)
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 39px;
+    margin-bottom: 138px;
+}
+
+main {
+    padding-left: 165px;
+    padding-right: 165px;
+}
+
+i {
+    margin: 8px;
+}
+
+#titleHeader {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+body {
+    background-color: var(--black-color);
+    color: white;
+    text-align: left;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    min-height: 100%;
+}
+
+
+#leftFooter {
+    width: 55%;
+}
+
+.containerPic {
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    display: none;
+}
+
+.button p a {
+    color: white;
+    text-decoration: underline var(--green-color);
+}
+
+.button p a:hover {
+    color: var(--green-color);
+    text-decoration: underline var(--green-color);
+}
+
+
+.containerPic:hover .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: white;
+    z-index: 1;
+}
+
+.containerPic:hover .projetPic1 {
+    opacity: 0.5;
+}
+
+.button p {
+    text-decoration: underline var(--green-color);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#leftFooterTitle {
+    font-size: 88px;
+}
+
+#leftFooterText {
+    font-size: 18px;
+    color: var(--lightGray-color)
+}
+
+
+#firstSection {
+    display: flex;
+    margin-bottom: 250px;
+}
+
+#rightFirstSection {
+    position: absolute;
+    top: 0;
+    right: 135px;
+    width: 445px;
+    height: 720px;
+    z-index: -1;
+}
+
+#inputStyle {
+    background-color: var(--darkgray-color);
+    border: none;
+    color: white;
+    width: 100%;
+    border-bottom: 1px solid var(--white-color);
+}
+
+#inputStyle:focus {
+    outline: none;
+}
+
+#secondSection {
+    margin-bottom: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.showMessage {
+    display: none;
+}
+
+#inputStyle:valid {
+    border-bottom: 1px solid var(--green-color);
+}
+
+#inputStyle:valid .showMessage {
+    opacity: 0;
+}
+
+#inputStyle:invalid {
+    border-bottom: 1px solid red;
+}
+
+#inputStyle:invalid .showMessage {
+    opacity: 1;
+}
+
+#buttonStyle {
+    border: 0 var(--darkgray-color);
+    background-color: var(--darkgray-color);
+    width: 40%;
+    color: white;
+    text-decoration: underline var(--green-color);
+    margin-top: 32px;
+    margin-bottom: 104px;
+}
+
+#buttonStyle:hover {
+    color: var(--green-color);
+}
+
+.send {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#thirdSection {
+    margin-bottom: 136px;
+}
+
+#rightFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+}
+
+#footer {
+    display: flex;
+    flex-direction: line;
+    justify-content: space-between;
+    padding-top: 87px;
+}
+
+
+
+#thirdSectionHeader {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#thirdSectionHeaderTextRight {
+    font-weight: 26px;
+    text-decoration: underline var(--green-color);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#thirdSectionHeaderTextRight:hover {
+    color: var(--green-color)
+}
+
+
+#thirdSectionContent {
+    margin-bottom: 136px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px
+}
+
+.circle {
+    position: absolute;
+    width: 530px;
+    height: 80px;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    box-sizing: border-box;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.circle1 {
+    left: 1149px;
+    top: 1077px;
+}
+
+
+.circle2 {
+    left: 1149px;
+    top: 1089px;
+}
+
+.circle3 {
+    left: 1149px;
+    top: 1102px;
+}
+
+.circle4 {
+    left: 1149px;
+    top: 1114px;
+}
+
+.circle5 {
+    left: 1149px;
+    top: 1126px;
+}
+
+.circle6 {
+    left: -205px;
+    top: 3524px;
+}
+
+
+.circle7 {
+    left: -205px;
+    top: 3536px;
+}
+
+.circle8 {
+    left: -205px;
+    top: 3549px;
+}
+
+.circle9 {
+    left: -205px;
+    top: 3561px;
+}
+
+.circle10 {
+    left: -205px;
+    top: 3573px;
+}
+
+figure {
+    width: 45%;
+}
+
+figure img {
+    width: 100%;
+}
+
+.duration {
+    color: var(--lightgray-color)
+}
+
+#contactText {
+    font-size: 26px;
+    text-decoration: underline var(--green-color);
+}
+
+.projectLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 500px;
+    margin-bottom: 250px;
+}
+
+.skillCase {
+    width: 32%;
+    margin-bottom: 52px;
+}
+
+
+footer {
+    background-color: var(--darkgray-color);
+    padding-left: 165px;
+    padding-right: 165px;
+}
+
+#bottomFooter {
+    display: flex;
+    justify-content: space-between;
+    color: #D9D9D9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#name {
+    text-decoration: underline var(--green-color);
+}
+
+#leftFirstSectionSubTitle {
+    color: var(--lightgray-color);
+    margin-top: 43px;
+    margin-bottom: 54px;
+}
+
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+/* Tablet Style */
+@media (min-width: 830px) and (max-width: 1024px) {
+    .skillCase {
+        min-width: 49%;
+    }
+
+    #footer {
+        flex-direction: column;
+    }
+
+    #leftFooter {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    #rightFooter {
+        min-width: 100%;
+    }
+
+    #leftFooterText {
+        margin-bottom: 48px;
+    }
+
+}
+
+/* Mobile Style */
+@media (max-width: 830px) {
+    .skillCase {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    figure {
+        min-width: 100%;
+    }
+
+    #footer {
+        flex-direction: column;
+    }
+
+    #leftFooter {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    #rightFooter {
+        min-width: 100%;
+    }
+
+    #leftFooterText {
+        margin-bottom: 48px;
+    }
+}
